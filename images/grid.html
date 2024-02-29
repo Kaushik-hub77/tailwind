@@ -1,0 +1,104 @@
+<style>
+  .girdp{
+   display: grid;
+   grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .header{
+    background-color: aquamarine;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middlecontent{
+    background-color: whitesmoke;
+  }
+
+  .footer{
+    background-color: aqua;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middlecontent{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 3px;
+    margin-bottom: 3px;
+  }
+
+  .middlecontent h3{
+    text-align: center;
+  }
+  .middleleft{
+    background-color: green;
+    height: 200px;
+    width: 400px;
+    margin-right: 20px;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .middleright{
+    background-color: orange;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blankpart{
+    height: 100px;
+  }
+
+  .Articlepart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  .img{
+    background-color: orangered;
+    color: black;
+    height: 100px;
+    margin: 2px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 150px;    
+}
+
+
+
+
+
+</style>
+
+
+<div class="girdp">
+  <div class="header">Header</div>
+  <div class="middlecontent">
+  <div class="middleleft">
+   <h3>Aside</h3>
+  </div>
+
+  <div class="middleright">
+    <div class="blankpart">
+     
+    </div>
+    
+    <h3>Article</h3>
+    <div class="Articlepart">
+    <div class="img">Image</div>
+    <div class="img">Image</div>
+    <div class="img">Image</div>
+    </div>
+  </div>
+  </div>
+  <div class="Footer">Footer</div>
+</div>
