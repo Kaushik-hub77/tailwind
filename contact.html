@@ -14,12 +14,36 @@
     <nav class="bg-green-100 flex justify-between p-5 sticky top-0 shadow-xl z-10">
         <h1 class="text-xl flex">GREENDEN</h1>
 
-        <ul class="flex gap-5">
+        <svg id="menuicon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6 md:hidden" style="cursor: pointer;">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5 " />
+    </svg>
+
+        <ul class="flex gap-5 hidden md:flex">
             <li><a href="index.html" class="hover:underline">Home</a></li>
             <li class="hover:underline">Products</li>
             <li class="hover:underline">Contact</li>
         </ul>
     </nav>
+
+    <div id="sidenavbar" class="bg-green-100 fixed z-30 top-0 right-0 transition-all duration-1000" style="width: 50%; height: 100vh; right:-50%;">
+        <div class="text-right p-5 " >
+           <p  id="closenav"  style="cursor: pointer;">X</p>
+        </div>        
+           <ul class="flex flex-col gap-10 items-center text-grey-600 ">
+               <li><a href="index.html" class="hover:underline hover:text-black-600">Home</a>
+               </li>
+   
+               <li>
+                   <a href="product.html" class="hover:underline hover:text-black-600">Products</a>
+               </li>
+   
+               <li>
+                   <a href="contact.html" class="hover:underline hover:text-black-600">Contact</a>
+               </li>
+           </ul>
+       </div>
+
    <div>
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -49,7 +73,7 @@
         <br>
         <p class="ml-5">&copy;2021 Greenday.com</p>
        </div>
-   
+   <script src="contact.js"></script>
    </body>
    
    </html>
